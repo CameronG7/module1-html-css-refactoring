@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-
+/* selectors generally organzied to appear as they appear in the html */
 p {
   font-size: 16px;
 }
@@ -16,6 +16,15 @@ a {
 body {
   background-color: #d9dcd6;
 }
+h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+li { /* simplified selector path as there is only one instance of li */
+  display: inline-block;
+  margin-left: 25px;
+}
 
 .header {
   padding: 20px;
@@ -25,16 +34,11 @@ body {
   color: #ffffff;
 }
 
-h1 {
-  display: inline-block;
-  font-size: 48px;
-}
-
 .seo {
   color: #d9cdd6;
 }
 
-.header div {
+.header nav { /* changed to nav to better describe what this section of the html does*/
   padding-top: 15px;
   margin-right: 20px;
   float: right;
@@ -43,14 +47,9 @@ h1 {
 }
  
 /* commented this next section out, don't think it does anyting? */
-/* .header div ul { 
+/* .headernav ul { 
   list-style-type: none;
 } */
-
-li { /* simplified  */
-  display: inline-block;
-  margin-left: 25px;
-}
 
 .hero {
   height: 800px;
@@ -77,6 +76,24 @@ li { /* simplified  */
   margin-left: 20px;
 }
 
+.left_sections { /* consolidated repeat code as one selector*/
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif; /* adedd "" around Calibri to fix incorrect syntax*/
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.left_sections img { /* consolidated repeat code as one selector*/
+  max-height: 200px;
+}
+
+.left_sections h2 { /* consolidated repeat code as one selector*/
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
 .benefits {
   margin-right: 20px;
   padding: 20px;
@@ -88,39 +105,20 @@ li { /* simplified  */
   background-color: #2589bd;
 }
 
-.benefits-sub{/* consolidated repeat code as one selector*/
+.benefits-sub{/* consolidated repeat code as one selector, renamed*/
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-.benefits-sub h3 { /* consolidated repeat code as one selector*/
+.benefits-sub h3 { /* consolidated repeat code as one selector, renamed*/
   margin-bottom: 10px;
   text-align: center;
 }
 
-.benefits-sub img { /* consolidated repeat code as one selector*/
+.benefits-sub img { /* consolidated repeat code as one selector, renamed*/
   display: block;
   margin: 10px auto;
   max-width: 150px;
-}
-
-.left_sections { /* consolidated repeat code as one selector*/
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif; /* adedd "" around Calibri to fix incorrect syntax*/
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-
-.left_sections img { /* consolidated repeat code as one selector*/
-  max-height: 200px;
-}
-
-.left_sections h2 { /* consolidated repeat code as one selector*/
-  margin-bottom: 20px;
-  font-size: 36px;
 }
 
 .footer {
