@@ -13,7 +13,7 @@ No installation necessary, just click the link below!
 ## Usage
 
 ![HoriseonRefactor](https://user-images.githubusercontent.com/122698132/219908079-33ab01d1-e316-41a6-bccb-049d7ea05f43.jpg)
-Click the link above and found out!
+Click the installation link and found out!
 
 ## Credits
 
